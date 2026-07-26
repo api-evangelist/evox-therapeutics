@@ -1,8 +1,26 @@
 aid: evox-therapeutics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/evox-therapeutics.png
 name: Evox Therapeutics
-description: 'Evox Therapeutics is a company surfaced as a portfolio company of gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Evox Therapeutics is an Oxford, United Kingdom based biotechnology company developing genetic
+  medicines that expand the reach of gene therapy into the brain to transform the treatment landscape
+  for severe neurodegenerative diseases. Its proprietary ExoEdit platform combines the natural transport
+  capabilities of exosomes with CRISPR-based gene editing to improve the delivery, potency, and safety
+  of genetic treatments for central nervous system disorders such as Rett Syndrome. Evox is a venture
+  backed life-sciences company (investors include GV) and was added to the API Evangelist network as a
+  company profile; it publishes a corporate and scientific website but does not currently expose a public
+  developer API, SDK, or documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/evox-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Gene Therapy
+- Genetic Medicine
+- Exosomes
+- Neurodegenerative Disease
+- CRISPR
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/evox-therapeutics-domain-security.yml
+- type: WellKnown
+  url: well-known/evox-therapeutics-well-known.yml
+- type: LLMsTxt
+  url: llms/evox-therapeutics-llms.txt
 - type: Website
-  url: http://evoxtherapeutics.com
+  url: https://www.evoxtherapeutics.com
+- type: About
+  url: https://www.evoxtherapeutics.com/about-us/
+- type: Blog
+  url: https://www.evoxtherapeutics.com/news/
+- type: PrivacyPolicy
+  url: https://www.evoxtherapeutics.com/privacy-policy/
+- type: Contact
+  url: https://www.evoxtherapeutics.com/contact/
+- type: Careers
+  url: https://www.evoxtherapeutics.com/careers/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/evox-therapeutics-ltd/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
